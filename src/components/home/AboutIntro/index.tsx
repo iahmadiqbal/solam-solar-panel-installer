@@ -2,7 +2,7 @@ import { FaCheckCircle, FaCog, FaBox, FaPhoneAlt } from "react-icons/fa";
 
 const AboutIntro: React.FC = () => {
   return (
-    <section className="w-full py-16 bg-white">
+    <section className="w-full py-16 bg-white overflow-x-hidden">
       {/* Keyframe animations inside component */}
       <style>
         {`
@@ -41,7 +41,7 @@ const AboutIntro: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
         {/* Left Image Section */}
         <div className="relative w-full flex justify-center md:justify-start animate-slide-in-left">
-          <div className="relative w-full sm:w-[95%] md:w-[100%] bg-gray-200 shadow-2xl overflow-hidden before:absolute before:-right-3 before:top-3 before:w-full before:h-full before:bg-yellow-400 before:rounded-lg before:-z-10 z-10">
+          <div className="relative w-full sm:w-[95%] md:w-[100%] bg-gray-200 shadow-2xl overflow-hidden before:absolute before:right-0 before:top-3 before:w-full before:h-full before:bg-yellow-400 before:rounded-lg before:-z-10 z-10">
             <img
               src="/images/electrician.jpg"
               alt="Electrician"
