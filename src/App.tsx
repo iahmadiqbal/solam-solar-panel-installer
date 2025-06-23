@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./layout";
@@ -8,7 +9,7 @@ import Services from "./views/services";
 import OurTeam from "./views/ourteam";
 import Contact from "./views/contact";
 
-function App() {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -23,6 +24,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
