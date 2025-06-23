@@ -1,5 +1,4 @@
 import React from "react";
-import { FaCheckCircle, FaCog, FaBox, FaPhoneAlt } from "react-icons/fa";
 
 interface ServiceItem {
   title: string;
