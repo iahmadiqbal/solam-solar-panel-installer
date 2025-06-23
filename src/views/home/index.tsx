@@ -1,7 +1,12 @@
 import React from "react";
+import SolarHero from "../../components/home";
 
 const Home: React.FC = () => {
-  return <div>Home page is here</div>;
+  return (
+    <>
+      <SolarHero />
+    </>
+  );
 };
 
 export default Home;
