@@ -5,6 +5,7 @@ import {
   FaYoutube,
   FaInstagram,
   FaEnvelope,
+  FaPhoneAlt,
 } from "react-icons/fa";
 
 const Footer: React.FC = () => {
@@ -16,8 +17,7 @@ const Footer: React.FC = () => {
           <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-0 text-center md:text-left">
             Smartest Way to Generate Electricity
           </h2>
-          <button className="px-6 py-2 text-sm font-medium text-white bg-[#1A1819] hover:bg-[#141314] transition flex items-center gap-2">
-            <FaEnvelope />
+          <button className="px-6 py-2 text-sm font-medium text-white bg-[#1A1819] hover:bg-[#141314] transition">
             Get in Touch
           </button>
         </div>
@@ -32,8 +32,12 @@ const Footer: React.FC = () => {
               We Offer a Wide Range of Quality Solar Panel Installation
               Services.
             </h3>
-            <p className="text-sm text-gray-300 mb-1">needhelp@company.com</p>
-            <p className="text-sm text-gray-300">(123) 456-7890</p>
+            <p className="text-sm text-gray-300 mb-1 flex items-center gap-2">
+              <FaEnvelope /> needhelp@company.com
+            </p>
+            <p className="text-sm text-gray-300 flex items-center gap-2">
+              <FaPhoneAlt /> (123) 456-7890
+            </p>
           </div>
 
           {/* Explore */}
@@ -68,6 +72,7 @@ const Footer: React.FC = () => {
               <br />
               New York 8800 United States
             </p>
+
             {/* Social Icons with working links */}
             <div className="flex gap-4 mt-2 text-lg">
               <a
