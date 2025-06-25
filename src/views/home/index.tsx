@@ -4,6 +4,7 @@ import AboutIntro from "../../components/home/AboutIntro";
 import AboutServicesSection from "../../components/home/AboutServicesSection";
 import ExitSection from "../../components/home/ExitSection";
 import EcoEnergySection from "../../components/home/EcoEnergySection";
+import BrandLogoRow from "../../components/home/BrandLogoRow";
 const Home: React.FC = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <AboutServicesSection />
       <ExitSection />
       <EcoEnergySection />
+      <BrandLogoRow />
     </>
   );
 };
