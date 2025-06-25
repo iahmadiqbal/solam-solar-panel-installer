@@ -3,6 +3,7 @@ import SolarHero from "../../components/home";
 import AboutIntro from "../../components/home/AboutIntro";
 import AboutServicesSection from "../../components/home/AboutServicesSection";
 import ExitSection from "../../components/home/ExitSection";
+import EcoEnergySection from "../../components/home/EcoEnergySection";
 
 const Home: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
       <AboutIntro />
       <AboutServicesSection />
       <ExitSection />
+      <EcoEnergySection />
     </>
   );
 };
