@@ -7,6 +7,7 @@ import EcoEnergySection from "../../components/home/EcoEnergySection";
 import BrandLogoRow from "../../components/home/BrandLogoRow";
 import StatsOverviewSection from "../../components/home/StatsOverviewSection";
 import BenefitsSection from "../../components/home/BenefitsSection";
+import TeamSection from "../../components/home/TeamSection";
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
       <BrandLogoRow />
       <StatsOverviewSection />
       <BenefitsSection />
+      <TeamSection />
     </>
   );
 };
