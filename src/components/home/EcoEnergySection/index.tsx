@@ -1,24 +1,26 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 
 const EcoEnergySection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
+  const handleObserver: IntersectionObserverCallback = useCallback(
+    (entries, observerInstance) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observerInstance.unobserve(entry.target);
+        }
+      });
+    },
+    []
+  );
+
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries, observerInstance) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observerInstance.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -10% 0px",
-      }
-    );
+    const observer = new IntersectionObserver(handleObserver, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -10% 0px",
+    });
 
     const currentRef = sectionRef.current;
     if (currentRef) observer.observe(currentRef);
@@ -26,7 +28,7 @@ const EcoEnergySection: React.FC = () => {
     return () => {
       if (currentRef) observer.unobserve(currentRef);
     };
-  }, []);
+  }, [handleObserver]);
 
   return (
     <section
