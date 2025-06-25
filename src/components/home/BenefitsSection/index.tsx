@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { FiSettings } from "react-icons/fi";
-import { HiSun } from "react-icons/hi";
 
 const BenefitsSection: React.FC = () => {
   const [show, setShow] = useState(false);
