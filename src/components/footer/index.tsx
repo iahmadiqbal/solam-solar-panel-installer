@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
   return (
     <>
       {/* Top Banner (centered, limited width) */}
-      <div className="bg-[#F6A235] w-full py-10 px-4">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center text-white">
+      <div className="bg-[#F6A235] py-16 mx-10">
+        <div className="w-full max-w-4xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-white">
           <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-0 text-center md:text-left">
             Smartest Way to Generate Electricity
           </h2>
