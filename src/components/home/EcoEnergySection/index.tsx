@@ -33,7 +33,7 @@ const EcoEnergySection: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-white py-16 px-4 sm:px-6 lg:px-8 font-['Helvetica']"
+      className="bg-white py-16 px-4 sm:px-6 lg:px-8 font-['Helvetica'] overflow-x-hidden"
     >
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
         {/* Left - Text */}
