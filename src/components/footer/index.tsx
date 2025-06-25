@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -6,8 +7,11 @@ import {
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* Top Banner */}
@@ -16,7 +20,10 @@ const Footer: React.FC = () => {
           <h2 className="text-left text-lg sm:text-xl font-semibold leading-tight flex-1">
             Smartest Way to Generate Electricity
           </h2>
-          <button className="px-6 py-2 text-sm font-medium text-white bg-[#1A1819] hover:bg-[#141314] transition whitespace-nowrap">
+          <button
+            onClick={() => navigate("/contact")}
+            className="px-6 py-2 text-sm font-medium text-white bg-[#1A1819] hover:bg-[#141314] transition whitespace-nowrap"
+          >
             Get in Touch
           </button>
         </div>
