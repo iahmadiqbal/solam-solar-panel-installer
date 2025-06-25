@@ -19,7 +19,7 @@ const SolarHero: React.FC = () => {
             Powering Homes <br /> With Solar Panels
           </h2>
           <button
-            className="bg-yellow-400 text-white hover:bg-gray-700 font-semibold px-10 py-4 transition duration-300 opacity-0 animate-fadeInDown"
+            className="bg-[#F6A235] text-white hover:bg-gray-700 font-semibold px-10 py-4 transition duration-300 opacity-0 animate-fadeInDown"
             style={{ animationDelay: "0.5s", animationDuration: "0.8s" }}
           >
             Discover More
