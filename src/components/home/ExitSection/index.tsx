@@ -69,11 +69,11 @@ const ExitSection: React.FC = () => {
                 className="w-full h-[300px] object-cover transition-opacity duration-500"
               />
 
-              {/* Dark Shadow Bottom */}
+              {/* Black bottom shadow */}
               <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-black to-transparent z-10"></div>
 
-              {/* Text */}
-              <div className="absolute left-0 bottom-6 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4">
+              {/* Text (visible on mobile, hover on desktop) */}
+              <div className="absolute left-0 bottom-6 z-20 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 p-4">
                 <div className="bg-yellow-400 h-1 w-6 mb-2"></div>
                 <h3 className="text-white text-xl font-semibold drop-shadow-md">
                   {item.heading}
