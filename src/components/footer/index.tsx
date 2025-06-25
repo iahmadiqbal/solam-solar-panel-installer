@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -11,13 +10,13 @@ import {
 const Footer: React.FC = () => {
   return (
     <>
-      {/* Top Banner (centered, limited width) */}
-      <div className="bg-[#F6A235] py-16 mx-10">
-        <div className="w-full max-w-4xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-white">
-          <h2 className="text-lg md:text-xl font-semibold mb-3 md:mb-0 text-center md:text-left">
+      {/* Top Banner */}
+      <div className="bg-[#F6A235] py-12 px-5 md:py-16 md:px-10">
+        <div className="max-w-4xl mx-auto flex flex-row justify-between items-center text-white gap-4">
+          <h2 className="text-left text-lg sm:text-xl font-semibold leading-tight flex-1">
             Smartest Way to Generate Electricity
           </h2>
-          <button className="px-6 py-2 text-sm font-medium text-white bg-[#1A1819] hover:bg-[#141314] transition">
+          <button className="px-6 py-2 text-sm font-medium text-white bg-[#1A1819] hover:bg-[#141314] transition whitespace-nowrap">
             Get in Touch
           </button>
         </div>
@@ -25,10 +24,10 @@ const Footer: React.FC = () => {
 
       {/* Main Footer */}
       <footer className="bg-[#1a1a1a] text-white pt-10 pb-5 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {/* Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-3">
+            <h3 className="text-base sm:text-lg font-semibold mb-3">
               We Offer a Wide Range of Quality Solar Panel Installation
               Services.
             </h3>
@@ -42,7 +41,7 @@ const Footer: React.FC = () => {
 
           {/* Explore */}
           <div>
-            <h4 className="text-lg font-semibold mb-3">Explore</h4>
+            <h4 className="text-base sm:text-lg font-semibold mb-3">Explore</h4>
             <ul className="space-y-1 text-sm text-gray-300">
               <li>About</li>
               <li>Leadership Team</li>
@@ -54,7 +53,9 @@ const Footer: React.FC = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-3">Services</h4>
+            <h4 className="text-base sm:text-lg font-semibold mb-3">
+              Services
+            </h4>
             <ul className="space-y-1 text-sm text-gray-300">
               <li>Solar Technology</li>
               <li>Solar Installation</li>
@@ -66,14 +67,12 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-3">Contact</h4>
+            <h4 className="text-base sm:text-lg font-semibold mb-3">Contact</h4>
             <p className="text-sm text-gray-300 mb-3">
               60 Brooklyn Golden Street
               <br />
               New York 8800 United States
             </p>
-
-            {/* Social Icons with working links */}
             <div className="flex gap-4 mt-2 text-lg">
               <a
                 href="https://facebook.com"
