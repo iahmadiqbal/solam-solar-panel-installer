@@ -72,9 +72,12 @@ const ExitSection: React.FC = () => {
               {/* Black bottom shadow */}
               <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-black to-transparent z-10"></div>
 
-              {/* Text (visible on mobile, hover on desktop) */}
+              {/* Text (mobile always visible, desktop hover) */}
               <div className="absolute left-0 bottom-6 z-20 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 p-4">
-                <div className="bg-yellow-400 h-1 w-6 mb-2"></div>
+                <div
+                  className="h-1 w-6 mb-2"
+                  style={{ backgroundColor: "#F6A235" }}
+                ></div>
                 <h3 className="text-white text-xl font-semibold drop-shadow-md">
                   {item.heading}
                 </h3>
@@ -82,7 +85,10 @@ const ExitSection: React.FC = () => {
                   {item.subheading}
                 </p>
                 <div className="mt-4">
-                  <span className="inline-flex items-center justify-center w-8 h-8 bg-yellow-500 text-white rounded-full">
+                  <span
+                    className="inline-flex items-center justify-center w-8 h-8 text-white rounded-full"
+                    style={{ backgroundColor: "#F6A235" }}
+                  >
                     <FaArrowRight size={12} />
                   </span>
                 </div>
