@@ -1,7 +1,14 @@
 import React from "react";
+import HeroContactSection from "../../components/contact/HeroContactSection";
+import ContactMapSection from "../../components/contact/ContactMapSection";
 
 const Contact: React.FC = () => {
-  return <div>Contact page is Here</div>;
+  return (
+    <>
+      <HeroContactSection />
+      <ContactMapSection />
+    </>
+  );
 };
 
 export default Contact;
