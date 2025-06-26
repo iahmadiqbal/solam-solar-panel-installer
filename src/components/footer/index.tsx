@@ -28,10 +28,15 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Main Footer */}
-      <footer className="bg-[#1a1a1a] text-white pt-10 pb-5 px-6 md:px-12">
+      <footer className="bg-[#1a1a1a] text-white pt-10 pb-5 px-6 md:px-12 overflow-x-hidden">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-          {/* Info */}
+          {/* Info with Logo */}
           <div>
+            <img
+              src="/images/solam.png"
+              alt="Solam Logo"
+              className="h-10 mb-3 invert"
+            />
             <h3 className="text-base sm:text-lg font-semibold mb-3">
               We Offer a Wide Range of Quality Solar Panel Installation
               Services.
@@ -44,88 +49,66 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Explore */}
+          {/* Explore Links */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">Explore</h4>
             <ul className="space-y-1 text-sm text-gray-300">
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" className="hover:text-[#F6A235]">
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/team">Leadership Team</Link>
+                <Link to="/ourteam" className="hover:text-[#F6A235]">
+                  Leadership Team
+                </Link>
               </li>
               <li>
-                <Link to="/services">Our Services</Link>
+                <Link to="/services" className="hover:text-[#F6A235]">
+                  Our Services
+                </Link>
               </li>
               <li>
-                <Link to="/projects">Recent Projects</Link>
+                <Link to="/projects" className="hover:text-[#F6A235]">
+                  Recent Projects
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" className="hover:text-[#F6A235]">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services with External Links */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">
               Services
             </h4>
             <ul className="space-y-1 text-sm text-gray-300">
-              <li>
-                <a
-                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#F6A235] transition"
-                >
-                  Solar Technology
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#F6A235] transition"
-                >
-                  Solar Installation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#F6A235] transition"
-                >
-                  Battery Materials
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#F6A235] transition"
-                >
-                  Solar Equipment
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#F6A235] transition"
-                >
-                  Charge Controllers
-                </a>
-              </li>
+              {[
+                "Solar Technology",
+                "Solar Installation",
+                "Battery Materials",
+                "Solar Equipment",
+                "Charge Controllers",
+              ].map((service, i) => (
+                <li key={i}>
+                  <a
+                    href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#F6A235]"
+                  >
+                    {service}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Social Links */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">Contact</h4>
             <p className="text-sm text-gray-300 mb-3">
@@ -170,7 +153,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Note */}
+        {/* Bottom Line */}
         <div className="border-t border-gray-700 mt-10 pt-5 text-center text-sm text-gray-400">
           © Copyrights are Reserved by YourCompany.com
         </div>
