@@ -54,23 +54,28 @@ const Footer: React.FC = () => {
             <h4 className="text-base sm:text-lg font-semibold mb-3">Explore</h4>
             <ul className="space-y-1 text-sm text-gray-300">
               <li>
+                <Link to="/" className="hover:text-[#F6A235] block">
+                  Home
+                </Link>
+              </li>
+              <li>
                 <Link to="/about" className="hover:text-[#F6A235] block">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/ourteam" className="hover:text-[#F6A235] block">
-                  Leadership Team
+                <Link to="/projects" className="hover:text-[#F6A235] block">
+                  Projects
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="hover:text-[#F6A235] block">
-                  Our Services
+                  Services
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="hover:text-[#F6A235] block">
-                  Recent Projects
+                <Link to="/ourteam" className="hover:text-[#F6A235] block">
+                  Our Team
                 </Link>
               </li>
               <li>
@@ -93,13 +98,13 @@ const Footer: React.FC = () => {
                 "Battery Materials",
                 "Solar Equipment",
                 "Charge Controllers",
-              ].map((service, index) => (
-                <li key={index}>
+              ].map((service, i) => (
+                <li key={i}>
                   <a
                     href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#F6A235] block"
+                    className="hover:text-[#F6A235]"
                   >
                     {service}
                   </a>
