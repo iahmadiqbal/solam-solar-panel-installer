@@ -99,14 +99,6 @@ const TeamShowcaseSection: React.FC = () => {
       </style>
 
       <div className="max-w-7xl mx-auto text-center">
-        <hr className="w-8 border-t-4 border-[#F6A235] mx-auto mb-2" />
-        <p className="text-sm text-gray-400 uppercase tracking-wide">
-          QUALITY PROFESSIONALS
-        </p>
-        <h2 className="text-4xl sm:text-4xl font-bold text-[#1A1819] mt-2 mb-10">
-          Our Team
-        </h2>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-4">
           {team.map((member, idx) => (
             <div key={idx} className="animate-fadeInUp">
