@@ -1,6 +1,7 @@
 import FeaturesOverviewSection from "../../components/about/FeaturesOverviewSection";
 import HeroAboutSection from "../../components/about/HeroAboutSection";
 import HeroBanner from "../../components/about/HeroBanner";
+import SolarStepsSection from "../../components/about/SolarStepsSection";
 import TestimonialSection from "../../components/about/TestimonialSection";
 
 const About: React.FC = () => {
@@ -10,6 +11,7 @@ const About: React.FC = () => {
       <FeaturesOverviewSection />
       <HeroBanner />
       <TestimonialSection />
+      <SolarStepsSection />
     </>
   );
 };
