@@ -1,6 +1,7 @@
 import FeaturesOverviewSection from "../../components/about/FeaturesOverviewSection";
 import HeroAboutSection from "../../components/about/HeroAboutSection";
 import HeroBanner from "../../components/about/HeroBanner";
+import TestimonialSection from "../../components/about/TestimonialSection";
 
 const About: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const About: React.FC = () => {
       <HeroAboutSection />
       <FeaturesOverviewSection />
       <HeroBanner />
+      <TestimonialSection />
     </>
   );
 };
