@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Services with External Links */}
+          {/* Services (External Links) */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">
               Services
@@ -98,8 +98,8 @@ const Footer: React.FC = () => {
                 "Battery Materials",
                 "Solar Equipment",
                 "Charge Controllers",
-              ].map((service, i) => (
-                <li key={i}>
+              ].map((service, index) => (
+                <li key={index}>
                   <a
                     href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997"
                     target="_blank"
@@ -113,9 +113,13 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Contact and Social */}
+          {/* Contact Heading Linked */}
           <div>
-            <h4 className="text-base sm:text-lg font-semibold mb-3">Contact</h4>
+            <Link to="/contact">
+              <h4 className="text-base sm:text-lg font-semibold mb-3 hover:text-[#F6A235] cursor-pointer">
+                Contact
+              </h4>
+            </Link>
             <p className="text-sm text-gray-300 mb-3">
               60 Brooklyn Golden Street
               <br />
