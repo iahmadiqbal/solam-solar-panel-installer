@@ -1,7 +1,11 @@
-import React from "react";
+import HeroProjectSection from "../../components/projects/HeroProjectSection";
 
 const Projects: React.FC = () => {
-  return <div>Projects is Here</div>;
+  return (
+    <>
+      <HeroProjectSection />
+    </>
+  );
 };
 
 export default Projects;
