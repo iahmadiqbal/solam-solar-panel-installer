@@ -12,7 +12,12 @@ const Header: React.FC = () => {
     >
       <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4">
         <div className="flex items-center flex-1">
-          <img src="/images/solam.png" alt="Logo" className="h-18 w-auto" />
+          {/* ✅ Responsive Logo Size */}
+          <img
+            src="/images/solam.png"
+            alt="Logo"
+            className="h-12 md:h-18 w-auto"
+          />
 
           <div className="ml-4 h-10 border-l border-gray-400"></div>
 
@@ -104,7 +109,6 @@ const Header: React.FC = () => {
             Contact
           </Link>
 
-          {/* ✅ Mobile Get a Quote Button with Icon */}
           <Link
             to="/contact"
             onClick={() => setIsOpen(false)}
