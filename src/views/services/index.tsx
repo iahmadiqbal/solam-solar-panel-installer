@@ -1,7 +1,11 @@
-import React from "react";
+import HeroServicesSection from "../../components/services/HeroServicesSection";
 
 const Services: React.FC = () => {
-  return <div>Services page is Here</div>;
+  return (
+    <>
+      <HeroServicesSection />
+    </>
+  );
 };
 
 export default Services;
