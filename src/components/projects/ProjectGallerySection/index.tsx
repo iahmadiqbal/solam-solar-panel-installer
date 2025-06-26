@@ -24,7 +24,7 @@ const allProjects: ProjectItem[] = [
     image: "/images/solarresearchdevelopment.jpg",
     heading: "Case Studies",
     subheading: "Solar Research Development",
-    category: "Installations", // will be filtered by logic
+    category: "Installations",
   },
   {
     image: "/images/solarpanelinstallation.jpg",
@@ -42,7 +42,7 @@ const allProjects: ProjectItem[] = [
     image: "/images/greentech.jpg",
     heading: "Case Studies",
     subheading: "Green Tech Education",
-    category: "Installations", // filtered logically for both Case Studies & Consulting
+    category: "Installations",
   },
 ];
 
@@ -58,7 +58,6 @@ type Category = (typeof categories)[number];
 const ProjectGallerySection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
 
-  // Manual filter logic (no data change)
   const filteredProjects = allProjects.filter((item) => {
     if (activeCategory === "All") return true;
 
@@ -70,10 +69,7 @@ const ProjectGallerySection: React.FC = () => {
     }
 
     if (activeCategory === "Consulting") {
-      return (
-        item.subheading === "Commercial Solar Inspections" ||
-        item.subheading === "Green Tech Education"
-      );
+      return item.subheading === "Commercial Solar Inspections";
     }
 
     if (activeCategory === "Installations") {
@@ -133,11 +129,14 @@ const ProjectGallerySection: React.FC = () => {
                 className="w-full h-[300px] object-cover"
               />
 
-              {/* Always visible shadow */}
-              <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent z-0" />
+              {/* Full gradient background for better readability */}
+              <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black to-transparent z-0" />
 
-              {/* Hover Text */}
-              <div className="absolute bottom-4 left-4 right-4 z-10 text-left opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* Text Overlay - Always visible on mobile, hover on desktop */}
+              <div
+                className="absolute bottom-4 left-4 right-4 z-10 text-left transition-opacity duration-300 
+                opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
+              >
                 <div className="h-1 w-6 mb-2 bg-[#F6A235]"></div>
                 <h3 className="text-white text-xl font-semibold">
                   {item.heading}
