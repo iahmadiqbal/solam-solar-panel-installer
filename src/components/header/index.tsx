@@ -10,19 +10,20 @@ const Header: React.FC = () => {
       className="bg-white text-gray-700 p-4 shadow-md font-sans overflow-x-hidden"
       style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
     >
-      <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 overflow-x-hidden">
-        <div className="flex items-center flex-1 overflow-x-hidden">
-          {/* ✅ Corrected Responsive Logo Size */}
+      <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4">
+        <div className="flex items-center flex-1">
+          {/* ✅ Responsive Logo Size */}
           <img
             src="/images/solam.png"
             alt="Logo"
             className="h-10 sm:h-12 md:h-16 lg:h-18 w-auto"
           />
 
+          {/* ✅ Vertical Divider */}
           <div className="ml-4 h-10 border-l border-gray-400"></div>
 
-          {/* ✅ gap-x-8 and ml-10 to avoid overflow */}
-          <nav className="hidden md:flex items-center gap-x-8 text-sm lg:text-base ml-10">
+          {/* ✅ Old Layout Look Recreated with Valid Classes */}
+          <nav className="hidden md:flex items-center gap-x-12 text-sm lg:text-base ml-36">
             <Link to="/" className="hover:text-[#F6A235]">
               Home
             </Link>
@@ -52,7 +53,7 @@ const Header: React.FC = () => {
           </nav>
         </div>
 
-        {/* Mobile Hamburger */}
+        {/* ✅ Mobile Menu Toggle */}
         <div className="md:hidden">
           <button
             className="text-2xl"
@@ -64,7 +65,7 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* ✅ Mobile Menu */}
       {isOpen && (
         <nav className="flex flex-col gap-2 mt-3 md:hidden px-4">
           <Link
