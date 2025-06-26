@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const SolarHero: React.FC = () => {
   return (
     <section className="w-full min-h-screen relative">
@@ -18,12 +21,13 @@ const SolarHero: React.FC = () => {
           >
             Powering Homes <br /> With Solar Panels
           </h2>
-          <button
-            className="bg-[#F6A235] text-white hover:bg-gray-700 font-semibold px-10 py-4 transition duration-300 opacity-0 animate-fadeInDown"
+          <Link
+            to="/services"
+            className="inline-block bg-[#F6A235] text-white hover:bg-gray-700 font-semibold px-10 py-4 transition duration-300 opacity-0 animate-fadeInDown"
             style={{ animationDelay: "0.5s", animationDuration: "0.8s" }}
           >
             Discover More
-          </button>
+          </Link>
         </div>
       </div>
 
