@@ -60,17 +60,17 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/ourteam" className="hover:text-[#F6A235]">
-                  Leadership Team
+                  Our Team
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="hover:text-[#F6A235]">
-                  Our Services
+                  Services
                 </Link>
               </li>
               <li>
                 <Link to="/projects" className="hover:text-[#F6A235]">
-                  Recent Projects
+                  Projects
                 </Link>
               </li>
               <li>
