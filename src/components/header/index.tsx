@@ -19,10 +19,10 @@ const Header: React.FC = () => {
             className="h-10 sm:h-12 md:h-16 lg:h-18 w-auto"
           />
 
-          {/* ✅ Vertical Divider */}
-          <div className="ml-4 h-10 border-l border-gray-400"></div>
+          {/* ✅ Vertical Divider - Hidden on mobile */}
+          <div className="ml-4 h-10 border-l border-gray-400 hidden md:block"></div>
 
-          {/* ✅ Old Layout Look Recreated with Valid Classes */}
+          {/* ✅ Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-x-12 text-sm lg:text-base ml-36">
             <Link to="/" className="hover:text-[#F6A235]">
               Home
