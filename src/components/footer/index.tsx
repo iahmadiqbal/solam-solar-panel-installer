@@ -33,23 +33,23 @@ const Footer: React.FC = () => {
           {/* Info with Logo */}
           <div>
             <img
-              src="/images/solam.png"
+              src="/images/solamwhite.png"
               alt="Solam Logo"
-              className="h-10 mb-3 invert"
+              className="h-10 mb-3"
             />
             <h3 className="text-base sm:text-lg font-semibold mb-3">
               We Offer a Wide Range of Quality Solar Panel Installation
               Services.
             </h3>
             <p className="text-sm text-gray-300 mb-1 flex items-center gap-2">
-              <FaEnvelope /> needhelp@company.com
+              <FaEnvelope className="text-[#F6A235]" /> needhelp@company.com
             </p>
             <p className="text-sm text-gray-300 flex items-center gap-2">
-              <FaPhoneAlt /> (123) 456-7890
+              <FaPhoneAlt className="text-[#F6A235]" /> (123) 456-7890
             </p>
           </div>
 
-          {/* Explore Links */}
+          {/* Explore */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">Explore</h4>
             <ul className="space-y-1 text-sm text-gray-300">
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Services with External Links */}
+          {/* Services (unchanged) */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">
               Services
@@ -93,8 +93,8 @@ const Footer: React.FC = () => {
                 "Battery Materials",
                 "Solar Equipment",
                 "Charge Controllers",
-              ].map((service, i) => (
-                <li key={i}>
+              ].map((service) => (
+                <li key={service}>
                   <a
                     href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997"
                     target="_blank"
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Contact & Social Links */}
+          {/* Contact with updated icon color */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">Contact</h4>
             <p className="text-sm text-gray-300 mb-3">
@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#F6A235] transition"
+                className="text-[#F6A235] hover:brightness-110 transition"
               >
                 <FaFacebookF />
               </a>
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#F6A235] transition"
+                className="text-[#F6A235] hover:brightness-110 transition"
               >
                 <FaTwitter />
               </a>
@@ -137,7 +137,7 @@ const Footer: React.FC = () => {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#F6A235] transition"
+                className="text-[#F6A235] hover:brightness-110 transition"
               >
                 <FaYoutube />
               </a>
@@ -145,7 +145,7 @@ const Footer: React.FC = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#F6A235] transition"
+                className="text-[#F6A235] hover:brightness-110 transition"
               >
                 <FaInstagram />
               </a>
@@ -153,7 +153,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Line */}
+        {/* Bottom Note */}
         <div className="border-t border-gray-700 mt-10 pt-5 text-center text-sm text-gray-400">
           © Copyrights are Reserved by YourCompany.com
         </div>
