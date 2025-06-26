@@ -1,7 +1,12 @@
 import React from "react";
+import HeroOurTeam from "../../components/ourteam/HeroOurTeam";
 
 const OurTeam: React.FC = () => {
-  return <div>OurTeam page is here</div>;
+  return (
+    <>
+      <HeroOurTeam />
+    </>
+  );
 };
 
 export default OurTeam;
