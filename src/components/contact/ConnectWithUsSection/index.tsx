@@ -125,7 +125,7 @@ const ConnectWithUsSection: React.FC = () => {
                 Send Message
               </button>
               {successMessage && (
-                <p className="text-green-600 font-medium mt-3 text-center">
+                <p className="text-[#000000] font-medium mt-3 text-center">
                   {successMessage}
                 </p>
               )}
