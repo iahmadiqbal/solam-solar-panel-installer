@@ -1,7 +1,11 @@
-import React from "react";
+import HeroAboutSection from "../../components/about/HeroAboutSection";
 
 const About: React.FC = () => {
-  return <div>About page is here</div>;
+  return (
+    <>
+      <HeroAboutSection />
+    </>
+  );
 };
 
 export default About;
