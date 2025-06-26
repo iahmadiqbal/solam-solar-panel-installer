@@ -1,4 +1,4 @@
-import { FaYoutube } from "react-icons/fa";
+import React from "react";
 
 const HeroBanner: React.FC = () => {
   return (
@@ -16,14 +16,17 @@ const HeroBanner: React.FC = () => {
             Power Energy Sources
           </h2>
 
-          {/* YouTube Icon */}
           <a
             href="https://youtu.be/XHOmBV4js_E?si=PM-27Db_vaXzhPx0"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center hover:scale-110 transition-transform duration-300"
           >
-            <FaYoutube className="text-[60px] text-[#F6A235]" />
+            <img
+              src="/images/play-button.png"
+              alt="YouTube Video"
+              className="w-[100px] h-[60px] object-contain"
+            />
           </a>
         </div>
       </div>
