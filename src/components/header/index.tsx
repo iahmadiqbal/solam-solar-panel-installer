@@ -10,18 +10,19 @@ const Header: React.FC = () => {
       className="bg-white text-gray-700 p-4 shadow-md font-sans overflow-x-hidden"
       style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
     >
-      <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4">
-        <div className="flex items-center flex-1">
-          {/* ✅ Responsive Logo Size */}
+      <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 overflow-x-hidden">
+        <div className="flex items-center flex-1 overflow-x-hidden">
+          {/* ✅ Corrected Responsive Logo Size */}
           <img
             src="/images/solam.png"
             alt="Logo"
-            className="h-10 sm:h-6 md:h-16 lg:h-18 w-auto"
+            className="h-10 sm:h-12 md:h-16 lg:h-18 w-auto"
           />
 
           <div className="ml-4 h-10 border-l border-gray-400"></div>
 
-          <nav className="hidden md:flex items-center gap-x-13 text-sm lg:text-base ml-38">
+          {/* ✅ gap-x-8 and ml-10 to avoid overflow */}
+          <nav className="hidden md:flex items-center gap-x-8 text-sm lg:text-base ml-10">
             <Link to="/" className="hover:text-[#F6A235]">
               Home
             </Link>
