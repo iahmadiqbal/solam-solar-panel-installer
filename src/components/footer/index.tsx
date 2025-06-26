@@ -54,42 +54,27 @@ const Footer: React.FC = () => {
             <h4 className="text-base sm:text-lg font-semibold mb-3">Explore</h4>
             <ul className="space-y-1 text-sm text-gray-300">
               <li>
-                <Link
-                  to="/about"
-                  className="hover:text-[#F6A235] block cursor-pointer"
-                >
+                <Link to="/about" className="hover:text-[#F6A235] block">
                   About
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/ourteam"
-                  className="hover:text-[#F6A235] block cursor-pointer"
-                >
+                <Link to="/ourteam" className="hover:text-[#F6A235] block">
                   Leadership Team
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/services"
-                  className="hover:text-[#F6A235] block cursor-pointer"
-                >
+                <Link to="/services" className="hover:text-[#F6A235] block">
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/projects"
-                  className="hover:text-[#F6A235] block cursor-pointer"
-                >
+                <Link to="/projects" className="hover:text-[#F6A235] block">
                   Recent Projects
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-[#F6A235] block cursor-pointer"
-                >
+                <Link to="/contact" className="hover:text-[#F6A235] block">
                   Contact
                 </Link>
               </li>
@@ -108,13 +93,13 @@ const Footer: React.FC = () => {
                 "Battery Materials",
                 "Solar Equipment",
                 "Charge Controllers",
-              ].map((service, i) => (
-                <li key={i}>
+              ].map((service, index) => (
+                <li key={index}>
                   <a
                     href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#F6A235]"
+                    className="hover:text-[#F6A235] block"
                   >
                     {service}
                   </a>
