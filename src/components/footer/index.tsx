@@ -7,11 +7,9 @@ import {
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
-  const navigate = useNavigate();
-
   return (
     <>
       {/* Top Banner */}
@@ -20,12 +18,12 @@ const Footer: React.FC = () => {
           <h2 className="text-left text-lg sm:text-xl font-semibold leading-tight flex-1">
             Smartest Way to Generate Electricity
           </h2>
-          <button
-            onClick={() => navigate("/contact")}
+          <Link
+            to="/contact"
             className="px-6 py-2 text-sm font-medium text-white bg-[#1A1819] hover:bg-[#141314] transition whitespace-nowrap"
           >
             Get in Touch
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -50,11 +48,21 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">Explore</h4>
             <ul className="space-y-1 text-sm text-gray-300">
-              <li>About</li>
-              <li>Leadership Team</li>
-              <li>Our Services</li>
-              <li>Recent Projects</li>
-              <li>Contact</li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/team">Leadership Team</Link>
+              </li>
+              <li>
+                <Link to="/services">Our Services</Link>
+              </li>
+              <li>
+                <Link to="/projects">Recent Projects</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
             </ul>
           </div>
 
@@ -64,11 +72,56 @@ const Footer: React.FC = () => {
               Services
             </h4>
             <ul className="space-y-1 text-sm text-gray-300">
-              <li>Solar Technology</li>
-              <li>Solar Installation</li>
-              <li>Battery Materials</li>
-              <li>Solar Equipment</li>
-              <li>Charge Controllers</li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#F6A235] transition"
+                >
+                  Solar Technology
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#F6A235] transition"
+                >
+                  Solar Installation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#F6A235] transition"
+                >
+                  Battery Materials
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#F6A235] transition"
+                >
+                  Solar Equipment
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997?_ga=2.46129444.1406169400.1745481684-378872565.1745481684"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#F6A235] transition"
+                >
+                  Charge Controllers
+                </a>
+              </li>
             </ul>
           </div>
 
