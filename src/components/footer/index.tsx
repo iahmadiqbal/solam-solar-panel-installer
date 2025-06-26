@@ -33,9 +33,9 @@ const Footer: React.FC = () => {
           {/* Info with Logo */}
           <div>
             <img
-              src="/images/solamwhite.png"
+              src="/images/solam.png"
               alt="Solam Logo"
-              className="h-10 mb-3"
+              className="h-10 mb-3 invert brightness-0"
             />
             <h3 className="text-base sm:text-lg font-semibold mb-3">
               We Offer a Wide Range of Quality Solar Panel Installation
@@ -54,34 +54,49 @@ const Footer: React.FC = () => {
             <h4 className="text-base sm:text-lg font-semibold mb-3">Explore</h4>
             <ul className="space-y-1 text-sm text-gray-300">
               <li>
-                <Link to="/about" className="hover:text-[#F6A235]">
+                <Link
+                  to="/about"
+                  className="hover:text-[#F6A235] block cursor-pointer"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/ourteam" className="hover:text-[#F6A235]">
-                  Our Team
+                <Link
+                  to="/ourteam"
+                  className="hover:text-[#F6A235] block cursor-pointer"
+                >
+                  Leadership Team
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-[#F6A235]">
-                  Services
+                <Link
+                  to="/services"
+                  className="hover:text-[#F6A235] block cursor-pointer"
+                >
+                  Our Services
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="hover:text-[#F6A235]">
-                  Projects
+                <Link
+                  to="/projects"
+                  className="hover:text-[#F6A235] block cursor-pointer"
+                >
+                  Recent Projects
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#F6A235]">
+                <Link
+                  to="/contact"
+                  className="hover:text-[#F6A235] block cursor-pointer"
+                >
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Services (unchanged) */}
+          {/* Services with External Links */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">
               Services
@@ -93,8 +108,8 @@ const Footer: React.FC = () => {
                 "Battery Materials",
                 "Solar Equipment",
                 "Charge Controllers",
-              ].map((service) => (
-                <li key={service}>
+              ].map((service, i) => (
+                <li key={i}>
                   <a
                     href="https://preview.themeforest.net/item/solam-solar-panel-installer-wordpress-theme/full_screen_preview/35975997"
                     target="_blank"
@@ -108,7 +123,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Contact with updated icon color */}
+          {/* Contact and Social */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold mb-3">Contact</h4>
             <p className="text-sm text-gray-300 mb-3">
@@ -121,33 +136,33 @@ const Footer: React.FC = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#F6A235] hover:brightness-110 transition"
+                className="hover:text-[#F6A235] transition"
               >
-                <FaFacebookF />
+                <FaFacebookF className="text-[#F6A235]" />
               </a>
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#F6A235] hover:brightness-110 transition"
+                className="hover:text-[#F6A235] transition"
               >
-                <FaTwitter />
+                <FaTwitter className="text-[#F6A235]" />
               </a>
               <a
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#F6A235] hover:brightness-110 transition"
+                className="hover:text-[#F6A235] transition"
               >
-                <FaYoutube />
+                <FaYoutube className="text-[#F6A235]" />
               </a>
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#F6A235] hover:brightness-110 transition"
+                className="hover:text-[#F6A235] transition"
               >
-                <FaInstagram />
+                <FaInstagram className="text-[#F6A235]" />
               </a>
             </div>
           </div>
