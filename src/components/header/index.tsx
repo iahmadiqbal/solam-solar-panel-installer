@@ -12,14 +12,14 @@ const Header: React.FC = () => {
     >
       <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4">
         <div className="flex items-center flex-1">
-          {/* ✅ Responsive Logo Size */}
+          {/* ✅ Logo */}
           <img
             src="/images/solam.png"
             alt="Logo"
             className="h-10 sm:h-12 md:h-16 lg:h-18 w-auto"
           />
 
-          {/* ✅ Vertical Divider - Hidden on mobile */}
+          {/* ✅ Vertical Divider - Desktop Only */}
           <div className="ml-4 h-10 border-l border-gray-400 hidden md:block"></div>
 
           {/* ✅ Desktop Navigation */}
@@ -42,7 +42,6 @@ const Header: React.FC = () => {
             <Link to="/contact" className="hover:text-[#F6A235]">
               Contact
             </Link>
-
             <Link
               to="/contact"
               className="bg-[#F6A235] text-white px-5 py-2 h-10 flex items-center gap-2 justify-center hover:brightness-110 transition"
@@ -53,7 +52,7 @@ const Header: React.FC = () => {
           </nav>
         </div>
 
-        {/* ✅ Mobile Menu Toggle */}
+        {/* ✅ Mobile Menu Toggle Button (☰) */}
         <div className="md:hidden">
           <button
             className="text-2xl"
@@ -67,59 +66,71 @@ const Header: React.FC = () => {
 
       {/* ✅ Mobile Menu */}
       {isOpen && (
-        <nav className="flex flex-col gap-2 mt-3 md:hidden px-4">
-          <Link
-            to="/"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-[#F6A235]"
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-[#F6A235]"
-          >
-            About
-          </Link>
-          <Link
-            to="/projects"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-[#F6A235]"
-          >
-            Projects
-          </Link>
-          <Link
-            to="/services"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-[#F6A235]"
-          >
-            Services
-          </Link>
-          <Link
-            to="/ourteam"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-[#F6A235]"
-          >
-            Our Team
-          </Link>
-          <Link
-            to="/contact"
-            onClick={() => setIsOpen(false)}
-            className="hover:text-[#F6A235]"
-          >
-            Contact
-          </Link>
+        <div className="md:hidden px-4 mt-3">
+          {/* ❌ Close Button */}
+          <div className="flex justify-end">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-2xl text-gray-700"
+              aria-label="Close menu"
+            >
+              ✕
+            </button>
+          </div>
 
-          <Link
-            to="/contact"
-            onClick={() => setIsOpen(false)}
-            className="bg-[#F6A235] text-white px-4 py-2 flex items-center gap-2 hover:brightness-110 transition"
-          >
-            <FaEnvelope className="text-white" />
-            Get a Quote
-          </Link>
-        </nav>
+          <nav className="flex flex-col gap-2 mt-3">
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#F6A235]"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#F6A235]"
+            >
+              About
+            </Link>
+            <Link
+              to="/projects"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#F6A235]"
+            >
+              Projects
+            </Link>
+            <Link
+              to="/services"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#F6A235]"
+            >
+              Services
+            </Link>
+            <Link
+              to="/ourteam"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#F6A235]"
+            >
+              Our Team
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#F6A235]"
+            >
+              Contact
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className="bg-[#F6A235] text-white px-4 py-2 flex items-center gap-2 hover:brightness-110 transition"
+            >
+              <FaEnvelope className="text-white" />
+              Get a Quote
+            </Link>
+          </nav>
+        </div>
       )}
     </header>
   );
